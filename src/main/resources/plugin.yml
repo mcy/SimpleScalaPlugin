@@ -1,0 +1,23 @@
+name: SimpleScalaPlugin
+main: com.xorinc.scalaPlugin.ScalaPlugin
+version: 1.0.0
+author: drXor
+website: http://github.com/drXor
+description: >
+    Simple example plugin in scala.
+commands:
+   hello:
+      description: Hello!
+      permission: scalaplugin.hello
+      usage: /<command> [name]
+   killcount:
+      description: Gives a killcount
+      premission: scalaplugin.killcount
+      usage: /<command> <name>
+permissions:
+   scalaplugin.hello:
+      description: Hello!
+      default: op
+   scalaplugin.killcount:
+       description: Gives a killcount
+       default: op
