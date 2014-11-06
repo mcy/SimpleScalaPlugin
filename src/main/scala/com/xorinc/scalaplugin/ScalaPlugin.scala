@@ -20,7 +20,7 @@ class ScalaPlugin extends JavaPlugin {
 object ScalaPlugin {
 
   implicit lazy val * = myself getOrElse {throw new RuntimeException("Plugin not enabled yet!")}
-  private[JavaPlugin] var myself: Option[JavaPlugin] = None
+  private[ScalaPlugin] var myself: Option[JavaPlugin] = None
 }
 
 object HelloCommand extends PlayerOnlyCommand {

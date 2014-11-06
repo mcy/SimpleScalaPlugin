@@ -49,7 +49,7 @@ object Util {
     @inline def ++ = p.incrementKills()
     @inline def +=(i: Int) = p.incrementKills(i)
     @inline def -=(i: Int) = p.decrementKills(i)
-    def toString = p.kills.toString
+    override def toString: String = p.kills.toString
     def * = p.kills
   }
 
